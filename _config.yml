@@ -1,10 +1,9 @@
-url: http://bradybeck.github.io
-#baseurl: /agency-jekyll-theme/
+url: http://kljacobs.github.io
 
 # Site settings
 title: Keri Jacobs
 email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "I am an assistant professor and cooperatives extension economist in the Department of Economics at Iowa State University and hold the Iowa Institute for Cooperatives Economics Professorship.  My current appointment began in late 2012 and is a 50% extension, 35% research, and 15% teaching appointment with a focus on cooperatives.  To fulfill this appointment, I teach an undergraduate course on cooperatives (Econ 332 Cooperatives), conduct research on cooperative businesses with a focus on ownership and capital structure, and am developing an extension program to address the needs of cooperatives in our state."
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -14,47 +13,7 @@ color:
   nav: 1591A6
 
 images:
-  background: ../img/header-bg2.jpg
-
-extension:
-- heading: Cooperative Returns and Distribution
-  secondary: a basic treatment of how cooperatives generate and allocate returns
-  link: https://iastate.box.com/s/4tx4o2gcvkclw9aisnykwkz1alk37cbj
-
-- heading: Cooperative Financial Statements
-  secondary: an overview of the balance sheet, income statement and sources and uses of funds statements of cooperatives
-  link: https://iastate.box.com/s/0xr9g3e00z6dyri8tosb3lwk8x6k5oqe
-
-- heading: Cooperative Capital Structure, Equity Redemption and Taxation
-  secondary: a basic presentation of how cooperatives redeem equity and the tax and capital structure considerations
-  link: https://iastate.box.com/s/1w0i8vhhpikfqkqjfjsfob2039mspng9
-
-- heading: “Who Owns the Cooperative,”
-  secondary: Ag Decision Maker, February, 2014.
-  link: http://www.extension.iastate.edu/agdm/articles/others/JacFeb14.html
-
-- heading: “Cooperative Grain Margins and Implications of Crop Price Movements and market Inverses,”
-  secondary: Ag Decision Maker, December, 2014.
-  link: http://www.extension.iastate.edu/agdm/articles/others/JacDec14.html
-
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
-  - title: github
-    url: http://github.com/jekyll
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  background: ../img/header-bg5.jpg
 
 # Build settings
 markdown: kramdown

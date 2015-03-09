@@ -4,58 +4,45 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Extension</h2>
-                <!--<h3 class="section-subheading text-muted">I was raised on a family farm in the Wayne Township of Jones County, Iowa.</h3>-->
+                <!-- <h3 class="section-subheading text-muted">{{ page.title }}</h3> -->
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <p>
-                    I hold a 50% extension appointment within the Department of Economics at Iowa State University,
-                    and was appointed to the Iowa Institute for Cooperatives Economics Professorship in 2013.  My charge in this role is to develop a nationally recognized extension program in the economics of agricultural cooperatives. As part of that effort, and with support of the Iowa Institute for Cooperatives (IIC), I co-direct professional development programs for Iowa’s cooperative board members and executives. The IIC’s Director Certification Program – a program that has existed for over 30 years – is one way in which I assist in meeting the needs of cooperatives in the state of Iowa.  Other activities include participating in IIC’s educational workshops throughout the year, conducting economic-based analyses on cooperatives that can be shared with stakeholders, and interacting with cooperatives in Iowa to identify and address emerging issues of concern to them.
-                </p>
-                <p>
-                    I am fortunate and thankful to have the support of the Iowa Institute for Cooperatives, local cooperatives in Iowa, and regional cooperatives in the Midwest as I develop extension programming intended to positively impact them and their long term success.  They continue to be strategic partners in my extension endeavors as well as in teaching and research.
-                </p>
-                <p>
-                    It is my hope that cooperatives and anyone interested in engaging with them on some level or learning more about them will utilize this website as a resource.  Many of my extension presentations and the developed tools and educational material can be found here, along with links to other resources for cooperatives.
-                </p>
-
+                {% markdown writeups/extensionWriteUp.md %}
             </div>
         </div>
         <br/>
-        <div class="row">
-            <div class="col-sm-offset-4 col-sm-4 text-center">
-                  <span class="fa-stack fa-4x">
-                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                    <i class="fa fa-file-text-o fa-stack-1x fa-inverse"></i>
-                </span>
-                <h4>Co-op 101</h4>
-                <p class="text-muted">an overview of the cooperative structure and its function</p>
-            </div>
-        </div>
-
-
-        <div class="row">
+        {% for category in site.data.extensionDocuments.categories %}
+            <div class="row">
+            {% if category.heading %}
+                <br/>
+                <h3 class="text-center">{{ category.heading }}</h3>
+                <hr/>
+            {% endif %} 
             <br/>
-            <h3 class="text-center">Cooperative Returns, Finance and Equity Management</h3>
-            <hr/>
-            <br/>
-                {% for document in site.extension %}
-                <div class="col-sm-6 col-md-4 text-center">
+            
+            {% for document in category.docs %}
+                {% if document.center %}
+                    <div class="col-sm-offset-4 col-sm-4 text-center">
+                {% else %}
+                    <div class="col-sm-6 col-md-4 text-center">
+                {% endif %}
                     <div class="team-member">
-                        <a href="{{document.link}}">
-                        <span class="fa-stack fa-4x">
+                        <a href="{{document.link}}" target="_blank">
+                        <span class="fa-stack fa-4x stack-hover">
                             <i class="fa fa-circle fa-stack-2x text-primary document-circle"></i>
                             <i class="fa fa-file-text-o fa-stack-1x fa-inverse"></i>
                         </span>
                         </a>
-                        <h4>{{ document.heading }}</h4>
+                        <h4>{{ document.heading }} </h4>
                         <p class="text-muted">{{ document.secondary }}</p>
-                        <a href="{{document.link}}" target="_blank"><i class="fa fa-file-o"></i>  Article</a>
                     </div>
                 </div>
-                {% endfor %}
+            {% endfor %}
 
-        </div>
+            </div>
+        {% endfor %}
+
     </div>
 </section>

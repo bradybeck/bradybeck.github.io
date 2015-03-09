@@ -170,6 +170,9 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
+.stack-hover i:hover {
+    color: #{{ site.color.nav }};
+}
 
 .navbar-default {
     border-color: transparent;
@@ -243,7 +246,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
-        font-size: 2em;
+        font-size: 3em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -259,7 +262,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 }
 
@@ -268,7 +271,7 @@ header {
     color: #fff;
     background-attachment: scroll;
     background-image: url({{site.images.background}});
-    background-position: center center;
+    background-position: center bottom;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
