@@ -8,7 +8,8 @@
                 </div>
             </div>
             <div class="row">
-                {% markdown writeups/researchWriteUp.md %}
+                {% capture markdown %}{% include writeups/researchWriteUp.md %}{% endcapture %}
+                {{ markdown | markdownify }}
             </div>
         </div>
     </section>
