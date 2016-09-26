@@ -1,0 +1,35 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import "./bourbon/bourbon";
+
+@import 'https://fonts.googleapis.com/css?family=Megrim|Raleway';
+
+$family-serif: 'Raleway', cursive;
+$family-monospace: 'Raleway';
+
+.bg {
+	&.about {
+		background: url('../images/country.jpeg');
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+.post-card {
+	&:hover {
+		    box-shadow: 0 2px 3px green, 0 0 0 1px green;
+	}
+
+}
+
+.title-text {
+	font-family: 'Megrim';
+	font-size: 36px !important;
+}
+
+$family-primary: $family-serif;
+
+@import "./bulma/bulma";
