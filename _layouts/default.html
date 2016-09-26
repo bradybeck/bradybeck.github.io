@@ -4,17 +4,52 @@
   {% include head.html %}
 
 
-    <body id="page-top" class="index">
+	<section class="hero is-primary is-large bg about">
+<!-- Hero header: will stick at the top -->
+<!-- <div class="hero-head">
+	  {% include header.html %}
+</div> -->
 
-    {% include header.html %}
-    {% include professional.html %}
-    {% include appointment.html %}
-    {% include extension.html %}
-    {% include research.html %}
-    {% include teaching.html %}
-    {% include personalBackground.html %}
-    {% include footer.html %}
-    {% include js.html %}
+<!-- Hero content: will be in the middle -->
+<div class="hero-body">
+	<div class="container">
+	<h1 class="title title-text is-large">
+			We Bought a Jungle.
+		</h1>
+		<h2 class="subtitle">
+			Ramblings of a small town family.
+		</h2>
+	</div>
+</div>
+
+</section>
+<div class='container'>
+	<section class='section'>
+	<div class="columns">
+  	<div class="column is-9">
+			{% include section/about.html %}
+		</div>
+		<div class="column is-3">
+			{% include section/postLinks.html %}
+		</div>
+	</div>
+</section>
+
+</div>
+
+			<ul class="post-list">
+		    {% for post in site.posts %}
+		      <li>
+		        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+		        <h2>
+		          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
+		        </h2>
+		      </li>
+		    {% endfor %}
+		  </ul>
+
+		  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
     </body>
 </html>
