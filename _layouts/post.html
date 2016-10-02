@@ -2,16 +2,16 @@
 <html>
 
 {% include head.html %}
-
-
-<section class="hero is-primary is-large bg about">
-	<div class="hero-body">
+<body>
+  {% include header.html %}
+<section class="hero is-primary bg">
+	<div class="hero-body has-text-centered">
 		<div class="container">
 			<h1 class="title title-text is-large">
-				We Bought a Jungle.
+				{{ page.title }}
 			</h1>
 			<h2 class="subtitle">
-				Ramblings of a small town family.
+        {{ page.subtitle }}
 			</h2>
 		</div>
 	</div>
@@ -30,19 +30,7 @@
 	</section>
 </div>
 
-<ul class="post-list">
-	{% for post in site.posts %}
-	<li>
-		<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-		<h2>
-			<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-		</h2>
-	</li>
-	{% endfor %}
-</ul>
-
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+{% include footer.html %}
 
 </body>
 </html>

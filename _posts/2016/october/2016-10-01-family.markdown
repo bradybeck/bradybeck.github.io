@@ -1,21 +1,19 @@
 ---
-title: Dance
-subtitle: Square Dance
-layout: post
-date: 2012-07-18
+title: Family
+subtitle: Family of 5
+layout: default
+date: 2016-10-01
 class: dance
 layout: post
-img: https://images.unsplash.com/photo-1429305254053-2a1bfe816f36
-thumbnail: dreams-thumbnail.png
+img: https://images.unsplash.com/photo-1437943085269-6da5dd4295bf
 alt: image-alt
-project-date: April 2014
-client: Start Bootstrap
-category: Tech
+category: family
 description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
 
 ---
 
-<image src='https://images.unsplash.com/photo-1429305254053-2a1bfe816f36'/>
+
+<image src='https://images.unsplash.com/photo-1437943085269-6da5dd4295bf'/>
 
 Progressive Web Apps (PWAs) describe how a web app can progressively change with use and user consent to give the user a more native-app-like experience with offline support, push notifications and being installable to the home-screen. They can gain substantial performance benefits thanks to intelligent service worker caching of your UI shell for repeat visits.
 

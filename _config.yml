@@ -24,5 +24,24 @@ url: "" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
+about:
+  - title: Faith.
+    description: I love Jesus. I listen to a lot of podcasts and read a lot of articles.
+    icon: 'fa-plus'
+    url: '/'
+  - title: Tech.
+    description: It's about to get nerdy. I'm a software engineer, If there's something sweet I'm working on or an advancement in tech that catches my eye I'll throw it up here.
+    icon: 'fa-desktop'
+    url: '/'
+  - title: Articles.
+    description: Here you'll find things that I'm reading or current events that I think are worth while for eyes other than my own. Mostly it'll just be the link but sometimes if you're lucky I'll share a few thoughts.
+    icon: 'fa-link'
+    url: '/articles/'
+  - title: Projects.
+    description: The wife keeps me busy doing all sorts of things. So I'll share what we've been up to with lots of pictures.
+    icon: 'fa-briefcase'
+    url: '/'
+
+
 # Build settings
 markdown: kramdown

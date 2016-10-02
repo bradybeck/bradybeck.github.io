@@ -1,0 +1,18 @@
+$list: (
+    'about': 'https://images.unsplash.com/photo-1429704658776-3d38c9990511',
+);
+
+
+.bg {
+
+  @each $page, $image in $list {
+    &.#{$page} {
+      background: url('#{$image}');
+  		background-size: cover;
+  		background-position: center;
+  	}
+
+  }
+
+
+}

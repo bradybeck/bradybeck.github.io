@@ -4,23 +4,16 @@
 @charset "utf-8";
 
 @import "./bourbon/bourbon";
+@import 'images';
 
 @import 'https://fonts.googleapis.com/css?family=Megrim|Raleway';
 
 $family-serif: 'Raleway', cursive;
 $family-monospace: 'Raleway';
 
-.bg {
-	&.about {
-		background: url('../images/country.jpeg');
-		background-size: cover;
-		background-position: center;
-	}
-}
-
 .post-card {
 	&:hover {
-		    box-shadow: 0 2px 3px green, 0 0 0 1px green;
+		    box-shadow: 0 2px 3px #A2C1D7, 0 0 0 1px #A2C1D7;
 	}
 
 }
@@ -31,5 +24,26 @@ $family-monospace: 'Raleway';
 }
 
 $family-primary: $family-serif;
+
+$list: (
+    'home': 'https://images.unsplash.com/uploads/1413142095961484763cf/d141726c?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb',
+    'articles': 'https://images.unsplash.com/photo-1431608660976-4fe5bcc2112c',
+    'dance': 'https://images.unsplash.com/photo-1454486837617-ce8e1ba5ebfe',
+);
+
+
+.bg {
+
+  @each $page, $image in $list {
+    &.#{$page} {
+      background: url('#{$image}');
+  		background-size: cover;
+  		background-position: center;
+  	}
+
+  }
+
+
+}
 
 @import "./bulma/bulma";
