@@ -1,4 +1,4 @@
----
+<!-- ---
 title: Let the kid sit in church.
 subtitle: Bringing the kids back to church.
 layout: default
@@ -28,4 +28,4 @@ description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At du
 
   <div class="defer-image image is-4by3">
     <div data-src="https://images.unsplash.com/photo-1437943085269-6da5dd4295bf" data-alt="church"></div>
-  </div>
+  </div> -->
