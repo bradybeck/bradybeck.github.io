@@ -10,6 +10,7 @@
 
 $family-serif: 'Raleway', cursive;
 $family-monospace: 'Raleway';
+$primary: #5a5c51;
 
 .post-card {
 	&:hover {
@@ -26,7 +27,7 @@ $family-monospace: 'Raleway';
 $family-primary: $family-serif;
 
 $list: (
-    'home': 'https://images.unsplash.com/uploads/1413142095961484763cf/d141726c?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb',
+    'home': 'https://images.unsplash.com/photo-1467703834117-04386e3dadd8?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb',
     'articles': 'https://images.unsplash.com/photo-1431608660976-4fe5bcc2112c',
     'dance': 'https://images.unsplash.com/photo-1454486837617-ce8e1ba5ebfe',
 );
@@ -45,5 +46,63 @@ $list: (
 
 
 }
+
+.no-js .defer-image {
+    display: none;
+}
+
+.defer-image > img {
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.defer-image.is-loading {
+    position: relative;
+    background: #EEE;
+}
+
+@keyframes bobble {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    35% {
+        opacity: 1;
+        transform: translateY(-20px);
+        background: $primary;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+}
+
+.defer-image.is-loading::after {
+    content: ' ';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1em;
+    height: 1em;
+    margin: -0.5em 0 0 -0.5em;
+    background: rgba(125, 125, 125, 0.5);
+    border-radius: 100%;
+    animation: bobble 2s cubic-bezier(0.6, 1, 1, 1) infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.defer-image.is-loaded > img {
+    animation: fadeIn 1s both;
+}
+
 
 @import "./bulma/bulma";

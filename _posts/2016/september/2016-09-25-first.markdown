@@ -4,7 +4,7 @@ subtitle: Website Design
 layout: default
 modal-id: 1
 date: 2014-07-18
-img: https://images.unsplash.com/photo-1429305254053-2a1bfe816f36
+img: https://images.unsplash.com/photo-1429305254053-2a1bfe816f36?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=979&q=40&cs=tinysrgb
 thumbnail: dreams-thumbnail.png
 alt: image-alt
 project-date: April 2014

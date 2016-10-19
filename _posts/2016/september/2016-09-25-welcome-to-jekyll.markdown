@@ -5,7 +5,7 @@ layout: default
 date: 2014-07-18
 class: dance
 layout: post
-img: https://images.unsplash.com/photo-1454486837617-ce8e1ba5ebfe
+img: https://images.unsplash.com/photo-1454486837617-ce8e1ba5ebfe?dpr=2&auto=format&crop=entropy&fit=crop&w=1500&h=979&q=40&cs=tinysrgb
 thumbnail: dreams-thumbnail.png
 alt: image-alt
 project-date: April 2014
